@@ -17,17 +17,21 @@ Pod::Spec.new do |spec|
 
   spec.name         = "BJTool"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of BJTool."
+  spec.summary      = "A lightweight toolkit for iOS developers"
+  spec.author       = { 'blackJokerZ' => 'emzhouxiaowang@163.com' }
+  spec.ios.deployment_target = '15.0'
+
+
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = 'BJTool is a lightweight toolkit for iOS developers'
+                   
 
-  spec.homepage     = "http://EXAMPLE/BJTool"
+ spec.homepage     = 'https://github.com/blackjokerz/BJTool'
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +42,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -80,7 +84,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/BJTool.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/blackjokerz/BJTool.git', :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +95,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "BJTool/**/*.{h,m}"
+  #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
